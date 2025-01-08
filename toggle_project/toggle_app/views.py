@@ -20,8 +20,9 @@ def index(request):
     return render(request, 'toggle_app/index.html', {'items': items})
 
 def run(g):
-    file = 'ideationology-4c639-firebase-adminsdk-5hfwu-29e74129a4.json'
-    cred = credentials.Certificate(file)
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(base_dir, 'ideationology-4c639-firebase-adminsdk-5hfwu-29e74129a4.json')
+    cred = credentials.Certificate(file_path)
 
     url = 'https://ideationology-4c639-default-rtdb.asia-southeast1.firebasedatabase.app/'
     path = {'databaseURL' : url}
@@ -30,11 +31,4 @@ def run(g):
         firebase_admin.initialize_app(cred, path)
 
     refv = db.reference('A/B/C/Switch')
-    # g = refv.get()
-    # if g == 1:
-    #     g = 0
-    # else:
-    #     g = 1
-
-    refv.set(g)
-    return g
+    refv.set(int(g))
