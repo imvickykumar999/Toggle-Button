@@ -1,12 +1,10 @@
-># `Toggle Button`
->
->      zip -r toggle.zip .
->
->[![image](https://github.com/user-attachments/assets/ae7b952f-4fe2-48c4-8a6c-1834d567a18b)](https://toggle.pythonanywhere.com/)
->[![image](https://github.com/user-attachments/assets/70fc62a8-f6a3-4a8b-b89c-ca394f598c2a)](https://toggle.pythonanywhere.com/admin/toggle_app/toggleitem/)
->
 ># **Material Admin**
 >Material Admin is based on Google’s Material Design and supports the latest Django versions.
+>
+>[![image](https://github.com/user-attachments/assets/70fc62a8-f6a3-4a8b-b89c-ca394f598c2a)](https://toggle.pythonanywhere.com/admin/toggle_app/toggleitem/)
+>![image](https://github.com/user-attachments/assets/f1152fa4-b73c-49f6-aa11-d3702d82cf5c)
+>[![image](https://github.com/user-attachments/assets/ae7b952f-4fe2-48c4-8a6c-1834d567a18b)](https://toggle.pythonanywhere.com/)
+>
 
 #### **Installation**:
 1. Install Material Admin:
